@@ -3,7 +3,6 @@
 
 <head>
     <title>Spotifeels-Static</title>
-    {% load static %}
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
@@ -18,13 +17,11 @@
             <p>Input a Phrase to Describe Your Playlist</p>
         </div>
         <form method="POST" class="form">
-            {% csrf_token %}
             <input type="text" name="user_input">
-            <button type="submit" class="button">Submit</button>
+            <button type="submit" class="button" onclick="">Submit</button>
         </form>
         <div class="search-output">
             <p>Playlist</p>
-            <p>{{ playlist_output }}</p>
         </div>
     </div>
 </body>
