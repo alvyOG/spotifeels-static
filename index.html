@@ -3,10 +3,29 @@
 
 <head>
     <title>Spotifeels-Static</title>
+    {% load static %}
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
-    <div>
-        <img src="images/" alt="Spotifeels Static Image 1">
+    <div class="title-container">
+        <h1>Spotifeels</h1>
+    </div>
+
+    <div class="search-container">
+        <!-- Create a form where user can type and submit text -->
+        <div class="search-prompt">
+            <p>Input a Phrase to Describe Your Playlist</p>
+        </div>
+        <form method="POST" class="form">
+            {% csrf_token %}
+            <input type="text" name="user_input">
+            <button type="submit" class="button">Submit</button>
+        </form>
+        <div class="search-output">
+            <p>Playlist</p>
+            <p>{{ playlist_output }}</p>
+        </div>
     </div>
 </body>
+</html>
