@@ -28,7 +28,12 @@
 
     <script>
         function showPlaylist() {
-            document.getElementById("playlist").innerHTML = "Sample Playlist Text"
+            var display =  document.getElementById("playlist");
+            if (display.innerHTML == "") {
+                display.innerHTML = "Sample Playlist Text!";
+            } else {
+                display.innerHTML = "";
+            }
         }
     </script>
 </body>
