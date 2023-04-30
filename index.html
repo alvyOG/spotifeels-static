@@ -18,11 +18,18 @@
         </div>
         <form method="POST" class="form">
             <input type="text" name="user_input">
-            <button type="submit" class="button" onclick="">Submit</button>
+            <button type="submit" class="button" onclick="showPlaylist()">Submit</button>
         </form>
         <div class="search-output">
             <p>Playlist</p>
+            <p id="playlist"></p>
         </div>
     </div>
+
+    <script>
+        function showPlaylist() {
+            document.getElementById("playlist").innerHTML = "Sample Playlist Text"
+        }
+    </script>
 </body>
 </html>
