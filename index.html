@@ -31,10 +31,13 @@
         <ol class="ol-custom">
             <li class="li-custom-q">Q: Can we develop a search engine that allows a user to generate a playlist from a given search query?</li>
             <li class="li-custom-a">A: More or less, using Spotify API and Genius API, in combination with some IR features!</li>
+            <br>
             <li class="li-custom-q">Q: Can we generate a song lyric index for recent, popular songs?</li>
             <li class="li-custom-a">A: Yes! By pulling songs from the Billboard Top 200 (Albums) via Spotify API, and their lyrics via Genius API, we can compile an index while also making use of tokenization and stemming.</li>
+            <br>
             <li class="li-custom-q">Q: Can we search through the index using terms in the query?</li>
             <li class="li-custom-a">A: Yes! We can perform a direct text match between the query terms and lyrics using TF-IDF to get the most relevant results.</li>
+            <br>
             <li class="li-custom-q">Q: Can we perform sentiment analysis on the lyrics and query to better match the playlists ideal sentiment?</li>
             <li class="li-custom-a">A: Yes, we have identified several libraries and lexicons to allow us to do this, in addition to Spotify's song (valence) features. This is a key future implementation!</li>
         </ol>
