@@ -28,7 +28,16 @@
 
     <div class="project-item-container">
         <h1>Big Questions</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <ul>
+            <li>Q: Can we develop a search engine that allows a user to generate a playlist from a given search query?</li>
+            <li>A: More or less, using Spotify API and Genius API, in combination with some IR features!</li>
+            <li>Q: Can we generate a song lyric index for recent, popular songs?</li>
+            <li>A: Yes! By pulling songs from the Billboard Top 200 (Albums) via Spotify API, and their lyrics via Genius API, we can compile an index while also making use of tokenization and stemming.</li>
+            <li>Q: Can we search through the index using terms in the query?</li>
+            <li>A: Yes! We can perform a direct text match between the query terms and lyrics using TF-IDF to get the most relevant results.</li>
+            <li>Q: Can we perform sentiment analysis on the lyrics and query to better match the playlists ideal sentiment?</li>
+            <li>A: Yes, we have identified several libraries and lexicons to allow us to do this, in addition to Spotify's song (valence) features. This is a key future implementation!</li>
+        </ul>
     </div>
 
     <div class="project-item-container">
