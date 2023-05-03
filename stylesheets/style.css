@@ -45,6 +45,13 @@ h1 {
     height: 30vh;
 }
 
+.project-item-container-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 .project-item-container {
     display: flex;
     justify-content: center;
